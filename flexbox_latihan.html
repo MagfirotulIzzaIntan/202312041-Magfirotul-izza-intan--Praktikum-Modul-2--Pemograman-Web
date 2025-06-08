@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <style> 
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container { 
+      display: flex; 
+      justify-content: space-around; /* Tersebar merata */
+      align-items: center;           /* Sejajar di tengah secara vertikal */
+      min-height: 100vh;             /* Pusatkan secara vertikal */
+      background-color: #f0f0f0;
+    }    
+
+    .item { 
+      background-color: lightcoral; 
+      padding: 20px; 
+      margin: 10px; 
+      border-radius: 8px;
+      flex: 1;                       /* Agar ukuran item fleksibel */
+      max-width: 200px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }    
+  </style> 
+</head>
+<body>   
+  <div class="container"> 
+    <div class="item">Item 1</div> 
+    <div class="item">Item 2</div> 
+    <div class="item">Item 3</div> 
+  </div>    
+</body> 
+</html>

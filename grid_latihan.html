@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <style> 
+    .grid-container { 
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr; /* 3 kolom sama besar */
+      grid-template-rows: 100px 100px;    /* 2 baris */
+      gap: 15px; 
+      background-color: #f2f2f2; 
+      padding: 15px; 
+    } 
+
+    .grid-item { 
+      color: white; 
+      text-align: center; 
+      padding: 20px; 
+      font-size: 18px; 
+      border-radius: 8px;
+    }
+
+    .item1 { background-color: #4CAF50; } /* hijau */
+    .item2 { 
+      background-color: #2196F3; /* biru */
+      grid-column: span 2;        /* item2 menempati dua kolom */
+    }
+    .item3 { background-color: #f44336; } /* merah */
+    .item4 { background-color: #FF9800; } /* oranye */
+    .item5 { background-color: #9C27B0; } /* ungu */
+    .item6 { background-color: #795548; } /* coklat */
+  </style> 
+</head> 
+<body> 
+  <div class="grid-container"> 
+    <div class="grid-item item1">1</div> 
+    <div class="grid-item item2">2 (span 2 columns)</div> 
+    <div class="grid-item item3">3</div> 
+    <div class="grid-item item4">4</div> 
+    <div class="grid-item item5">5</div> 
+    <div class="grid-item item6">6</div> 
+  </div> 
+</body> 
+</html>
